@@ -99,12 +99,6 @@ public class DataInjectionModule extends AbstractModule
 		return datamanager.PLAYER_EXPERIENCE_TABLE;
 	}
 	
-	@Provides
-	@Singleton
-	ChatHandlers provideChatHandlers()
-	{
-		return new ChatHandlersFactory(injector).createChatHandlers();
-	}
 
 	@Provides
 	PlayerStatsData providePlayerStatsData(DataManager datamanager)
